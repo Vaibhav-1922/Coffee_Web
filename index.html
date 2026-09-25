@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Brew & Bean — Lucknow's favourite coffee shop. Handcrafted brews, cozy vibes, warm memories.">
+    <meta name="theme-color" content="#2a0f0a">
+    <title> All in one Cafeteria </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="preload" as="image" href="image/coffee-hero-section.webp">
+    <link rel="icon" type="image/png" href="image/coffee-cup.png">
+
+</head>
+<body>
+
+    <!-- ============ PRELOADER ============ -->
+    <div class="preloader" aria-hidden="true">
+        <div class="preloader-cup"><i class="fa-solid fa-mug-hot"></i></div>
+    </div>
+
+    <!-- ============ HEADER ============ -->
+    <header class="site-header" id="header">
+        <div class="navbar section-content">
+            <a href="#home" class="brand">
+                <img src="image/coffee-cup.webp" alt="" class="brand-icon" width="36" height="36" decoding="async">
+                <span class="brand-text">All in one Cafeteria</span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#reviews" class="nav-link">Reviews</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <a href="#contact" class="nav-cta">
+                <span>Order Now</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <button class="menu-toggle" id="menuOpen" aria-label="Open menu" type="button">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <button class="drawer-close" id="menuClose" aria-label="Close menu" type="button">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <nav class="drawer-nav">
+            <a href="#home" class="drawer-link"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="#about" class="drawer-link"><i class="fa-solid fa-circle-info"></i> About</a>
+            <a href="#menu" class="drawer-link"><i class="fa-solid fa-mug-hot"></i> Menu</a>
+            <a href="#reviews" class="drawer-link"><i class="fa-solid fa-star"></i> Reviews</a>
+            <a href="#gallery" class="drawer-link"><i class="fa-solid fa-image"></i> Gallery</a>
+            <a href="#contact" class="drawer-link"><i class="fa-solid fa-envelope"></i> Contact</a>
+        </nav>
+
+        <div class="drawer-footer">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <main>
+        <!-- ============ HERO ============ -->
+        <section class="hero" id="home">
+            <div class="hero-grain"></div>
+
+            <div class="hero-inner section-content">
+                <div class="hero-content">
+                    <span class="hero-pill">
+                        <i class="fa-solid fa-star"></i>
+                        Rated #1 Coffee in Lucknow
+                    </span>
+
+                    <h1 class="hero-title">
+                        Every cup tells
+                        <span class="accent">a warm story.</span>
+                    </h1>
+
+                    <p class="hero-desc">
+                        Welcome to All in one Cafeteria where fresh-roasted beans meet cozy corners.
+                        Handcrafted with love, served with a smile.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#menu" class="btn btn-primary">
+                            <i class="fa-solid fa-mug-hot"></i>
+                            Explore Menu
+                        </a>
+                        <a href="#contact" class="btn btn-ghost">
+                            Book a Table
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-num">15+</span>
+                            <span class="stat-label">Years brewing</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-num">50+</span>
+                            <span class="stat-label">Coffee blends</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-num">10k+</span>
+                            <span class="stat-label">Happy guests</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-image-frame">
+                        <img src="image/coffee-hero-section.webp"
+                             alt="Signature coffee"
+                             class="hero-image"
+                             width="560" height="560"
+                             fetchpriority="high"
+                             decoding="async">
+                    </div>
+                    <div class="hero-float-card">
+                        <div class="float-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                        <div class="float-text">
+                            <strong>Free delivery</strong>
+                            <span>On orders over ₹500</span>
+                        </div>
+                    </div>
+                    <div class="hero-float-badge">
+                        <i class="fa-solid fa-seedling"></i>
+                        <span>100% Organic</span>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#about" class="scroll-hint" aria-label="Scroll down">
+                <span></span>
+            </a>
+        </section>
+
+        <!-- ============ ABOUT ============ -->
+        <section class="about" id="about">
+            <div class="section-content about-grid">
+                <div class="about-media">
+                    <div class="about-media-inner">
+                        <img src="image/Couple.webp"
+                             alt="Our coffee shop"
+                             class="about-img"
+                             width="480" height="480"
+                             loading="lazy"
+                             decoding="async">
+                    </div>
+                    <div class="about-tag">
+                        <i class="fa-solid fa-award"></i>
+                        <div>
+                            <strong>Since 2010</strong>
+                            <span>Brewing happiness</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <span class="eyebrow">Our Story</span>
+                    <h2 class="section-heading">
+                        Small batch beans,
+                        <span class="accent">big warm cups.</span>
+                    </h2>
+
+                    <p class="about-text">
+                        We're a neighbourhood coffee shop in the heart of Lucknow, roasting our beans
+                        in small batches and pulling shots with obsessive care. From french press to
+                        cold brew, our menu is designed around one thing — the perfect cup.
+                    </p>
+
+                    <ul class="about-points">
+                        <li><i class="fa-solid fa-check"></i> Single-origin, freshly roasted</li>
+                        <li><i class="fa-solid fa-check"></i> Hand-picked by expert baristas</li>
+                        <li><i class="fa-solid fa-check"></i> Warm, cozy atmosphere</li>
+                        <li><i class="fa-solid fa-check"></i> Locally owned &amp; loved</li>
+                    </ul>
+
+                    <div class="about-cta-row">
+                        <a href="#menu" class="btn btn-primary">
+                            View Menu
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <div class="about-socials">
+                            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ MENU ============ -->
+        <section class="menu" id="menu">
+            <div class="section-content">
+                <div class="section-head">
+                    <span class="eyebrow light">Our Menu</span>
+                    <h2 class="section-heading light">
+                        Crafted with <span class="accent">care.</span>
+                    </h2>
+                    <p class="section-sub">Handpicked favourites, brewed fresh and served warm.</p>
+                </div>
+
+                <div class="menu-grid">
+                    <article class="menu-card">
+                        <div class="menu-icon-wrap">
+                            <img src="image/Coffee_beverages.webp" alt="Hot Beverages" loading="lazy" decoding="async">
+                        </div>
+                        <h3>Hot Beverages</h3>
+                        <p>Coffee is a morning hug in a mug.</p>
+                        <span class="menu-price">from ₹120</span>
+                    </article>
+
+                    <article class="menu-card">
+                        <div class="menu-icon-wrap">
+                            <img src="image/Cold-Beverages.webp" alt="Cold Beverages" loading="lazy" decoding="async">
+                        </div>
+                        <h3>Cold Beverages</h3>
+                        <p>Paradise is anywhere with iced coffee.</p>
+                        <span class="menu-price">from ₹150</span>
+                    </article>
+
+                    <article class="menu-card">
+                        <div class="menu-icon-wrap">
+                            <img src="image/Refreshment.webp" alt="Refreshment" loading="lazy" decoding="async">
+                        </div>
+                        <h3>Refreshment</h3>
+                        <p>Fresh juices that brighten your day.</p>
+                        <span class="menu-price">from ₹90</span>
+                    </article>
+
+                    <article class="menu-card">
+                        <div class="menu-icon-wrap">
+                            <img src="image/Combo-new.webp" alt="Combo Offer" loading="lazy" decoding="async">
+                        </div>
+                        <h3>Combo Offer</h3>
+                        <p>Share with family — a feast for all.</p>
+                        <span class="menu-price">from ₹299</span>
+                    </article>
+
+                    <article class="menu-card">
+                        <div class="menu-icon-wrap">
+                            <img src="image/Dessert.webp" alt="Dessert" loading="lazy" decoding="async">
+                        </div>
+                        <h3>Dessert</h3>
+                        <p>Sweet endings to every meal.</p>
+                        <span class="menu-price">from ₹110</span>
+                    </article>
+
+                    <article class="menu-card">
+                        <div class="menu-icon-wrap">
+                            <img src="image/Burger-FrinchFries.webp" alt="Burger &amp; Fries" loading="lazy" decoding="async">
+                        </div>
+                        <h3>Burger &amp; Fries</h3>
+                        <p>Say hello to classic comfort food.</p>
+                        <span class="menu-price">from ₹180</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ TESTIMONIALS (working Swiper) ============ -->
+        <section class="reviews" id="reviews">
+            <div class="section-content">
+                <div class="section-head">
+                    <span class="eyebrow">Testimonials</span>
+                    <h2 class="section-heading">
+                        Loved by our <span class="accent">regulars.</span>
+                    </h2>
+                    <p class="section-sub">Real words from real coffee lovers.</p>
+                </div>
+
+                <!--
+                    Swiper DOM structure — DO NOT add extra wrappers:
+                    .swiper > .swiper-wrapper > .swiper-slide
+                    nav & pagination are DIRECT children of .swiper
+                -->
+                <div class="swiper reviews-swiper" id="reviewsSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <article class="review-card">
+                                <div class="review-quote"><i class="fa-solid fa-quote-left"></i></div>
+                                <div class="review-stars">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="review-text">
+                                    I have been a big fan of Brew &amp; Bean for a very long time.
+                                    The instant coffee has such a rich, bold flavour — I'm completely hooked.
+                                </p>
+                                <div class="review-author">
+                                    <img src="image/User1.webp" alt="Joss Bethal" loading="lazy" decoding="async">
+                                    <div>
+                                        <strong>Joss Bethal</strong>
+                                        <span>Regular customer</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <article class="review-card">
+                                <div class="review-quote"><i class="fa-solid fa-quote-left"></i></div>
+                                <div class="review-stars">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="review-text">
+                                    The freshest I've experienced — a lovely rounded complex flavour,
+                                    better than most other decafs by far, and well priced.
+                                </p>
+                                <div class="review-author">
+                                    <img src="image/User.webp" alt="Bravo" loading="lazy" decoding="async">
+                                    <div>
+                                        <strong>Bravo</strong>
+                                        <span>Coffee enthusiast</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <article class="review-card">
+                                <div class="review-quote"><i class="fa-solid fa-quote-left"></i></div>
+                                <div class="review-stars">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="review-text">
+                                    I just love the Daily Blend — I've been ordering it over the
+                                    last three years and it never disappoints.
+                                </p>
+                                <div class="review-author">
+                                    <img src="image/user3.webp" alt="Michael Santaner" loading="lazy" decoding="async">
+                                    <div>
+                                        <strong>Michael Santaner</strong>
+                                        <span>Daily regular</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <article class="review-card">
+                                <div class="review-quote"><i class="fa-solid fa-quote-left"></i></div>
+                                <div class="review-stars">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="review-text">
+                                    Thanks for the delightful Crema coffee beans — wonderful flavour
+                                    and a beautiful aroma every single morning.
+                                </p>
+                                <div class="review-author">
+                                    <img src="image/user3 (2).webp" alt="Zimmie Lathem" loading="lazy" decoding="async">
+                                    <div>
+                                        <strong>Zimmie Lathem</strong>
+                                        <span>Home brewer</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <article class="review-card">
+                                <div class="review-quote"><i class="fa-solid fa-quote-left"></i></div>
+                                <div class="review-stars">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="review-text">
+                                    The customer service I received was genuinely impressive. Thank you
+                                    for the great service and such fantastic coffee.
+                                </p>
+                                <div class="review-author">
+                                    <img src="image/User5.webp" alt="Robert Pawl" loading="lazy" decoding="async">
+                                    <div>
+                                        <strong>Robert Pawl</strong>
+                                        <span>Weekend visitor</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <button class="swiper-button-prev reviews-nav" aria-label="Previous review"></button>
+                    <button class="swiper-button-next reviews-nav" aria-label="Next review"></button>
+                    <div class="swiper-pagination reviews-dots"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ GALLERY ============ -->
+        <section class="gallery" id="gallery">
+            <div class="section-content">
+                <div class="section-head">
+                    <span class="eyebrow">Gallery</span>
+                    <h2 class="section-heading">
+                        A peek inside <span class="accent">our world.</span>
+                    </h2>
+                </div>
+
+                <div class="gallery-grid">
+                    <figure class="gallery-item gallery-tall">
+                        <img src="image/Coffee.webp" alt="Coffee" loading="lazy" decoding="async">
+                        <figcaption>Coffee</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="image/Dosa.webp" alt="Dosa" loading="lazy" decoding="async">
+                        <figcaption>Dosa</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="image/Sandwich.webp" alt="Sandwich" loading="lazy" decoding="async">
+                        <figcaption>Sandwich</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="image/Omelette.webp" alt="Omelette" loading="lazy" decoding="async">
+                        <figcaption>Omelette</figcaption>
+                    </figure>
+                    <figure class="gallery-item gallery-wide">
+                        <img src="image/Dish.webp" alt="Dish" loading="lazy" decoding="async">
+                        <figcaption>Signature Plate</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="image/Shakes.webp" alt="Shakes" loading="lazy" decoding="async">
+                        <figcaption>Shakes</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section class="contact" id="contact">
+            <div class="section-content">
+                <div class="section-head">
+                    <span class="eyebrow light">Get in Touch</span>
+                    <h2 class="section-heading light">
+                        Come say <span class="accent">hello.</span>
+                    </h2>
+                    <p class="section-sub">We'd love to hear from you — visit, call, or drop a message.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Info -->
+                    <aside class="contact-info">
+                        <div class="info-block">
+                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <span>Visit us</span>
+                                <p>IT Metro Station, Lucknow</p>
+                            </div>
+                        </div>
+
+                        <div class="info-block">
+                            <div class="info-icon"><i class="fa-regular fa-envelope"></i></div>
+                            <div>
+                                <span>Email</span>
+                                <p>info@allinonecafe.com</p>
+                            </div>
+                        </div>
+
+                        <div class="info-block">
+                            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <span>Call us</span>
+                                <p>+91 XXXXXXXX</p>
+                            </div>
+                        </div>
+
+                        <div class="info-block">
+                            <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
+                            <div>
+                                <span>Mon – Fri</span>
+                                <p>11:00 AM – 10:00 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="info-block">
+                            <div class="info-icon"><i class="fa-solid fa-globe"></i></div>
+                            <div>
+                                <span>Website</span>
+                                <p>www.allinonecafe.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-socials">
+                            <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="social-btn" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </aside>
+
+                    <!-- Form -->
+                    <form method="post" action="https://formspree.io/f/mzezvowo"  class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="field">
+                                <i class="fa-regular fa-user"></i>
+                                <input type="text" name="name" placeholder="Your name" required minlength="2" autocomplete="name">
+                                <span class="field-error" data-error="name"></span>
+                            </div>
+
+                            <div class="field">
+                                <i class="fa-regular fa-envelope"></i>
+                                <input type="email" name="email" placeholder="Your email" required autocomplete="email">
+                                <span class="field-error" data-error="email"></span>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <i class="fa-solid fa-tag"></i>
+                            <input type="text" name="subject" placeholder="Subject (optional)" autocomplete="off">
+                        </div>
+
+                        <div class="field field-textarea">
+                            <i class="fa-regular fa-comment-dots"></i>
+                            <textarea name="message" placeholder="Your message" rows="5" required minlength="10"></textarea>
+                            <span class="field-error" data-error="message"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span class="btn-label">Send Message</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+
+                        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+        <div class="section-content">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="brand brand-footer">
+                        <img src="image/coffee-cup.webp" alt="" width="34" height="34" loading="lazy" decoding="async">
+                        <span class="brand-text">All in one Cafeteria</span>
+                    </div>
+                    <p>Brewing happiness since 2010. Come for the coffee, stay for the memories.</p>
+
+                    
+                </div>
+
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Follow</h4>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 ALl in one Cafeteria. All rights reserved.</p>
+                <p>Crafted with <i class="fa-solid fa-heart"></i> in Lucknow</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top" type="button">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
